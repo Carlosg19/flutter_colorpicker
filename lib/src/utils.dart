@@ -21,7 +21,7 @@ bool useWhiteForeground(Color backgroundColor, {double bias = 0.0}) {
           pow(backgroundColor.green, 2) * 0.587 +
           pow(backgroundColor.blue, 2) * 0.114)
       .round();
-  return v < 130 + bias ? true : false;
+  return v < (130 + bias);
 }
 
 /// Convert HSV to HSL
